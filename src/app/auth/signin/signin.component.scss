@@ -1,0 +1,16 @@
+.signin__container {
+  height: 100vh;
+  display: flex;
+  background-color: aliceblue;
+  .signin__content {
+    height: auto;
+    width: 500px;
+    margin: auto;
+    padding: 40px;
+
+    .signin__form {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
