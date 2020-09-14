@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .menu {
+    height: 50px;
+    background-color: aqua;
+  }
+
+  .chat-window {
+    height: calc(100% - 50px);
+    background-color: blueviolet;
+  }
+}
