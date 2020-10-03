@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  max-width: 400px;
+  border-radius: var(--border-radius);
+  padding: var(--spacing-08);
+  margin: var(--spacing-16);
+  position: relative;
+
+  .message {
+    color: var(--primary);
+    font-size: var(--fs-14);
+  }
+
+  .timestamp {
+    color: var(--secondary);
+    font-size: var(--fs-12);
+    align-self: flex-end;
+  }
+
+  .icon {
+    position: absolute;
+    top: -8px;
+  }
+
+  &.incoming {
+    background-color: var(--msg-incoming);
+    margin-right: auto;
+    .icon {
+      left: -8px;
+      transform: rotateY(180deg);
+      mat-icon {
+        color: var(--msg-incoming);
+      }
+    }
+  }
+
+  &.outgoing {
+    background-color: var(--msg-outgoing);
+    margin-left: auto;
+
+    .icon {
+      right: -8px;
+      mat-icon {
+        color: var(--msg-outgoing);
+      }
+    }
+  }
+}

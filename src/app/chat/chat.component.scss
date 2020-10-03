@@ -3,7 +3,9 @@
   height: 100vh;
   display: flex;
   flex-direction: row;
-
+  padding: 1% 4%;
+  background-color: #111;
+  box-sizing: border-box;
   .left-panel {
     flex: 2 0 0;
   }

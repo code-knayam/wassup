@@ -5,11 +5,9 @@
 
   .menu {
     height: 50px;
-    background-color: aqua;
   }
 
-  .chat-window {
+  .chat__container {
     height: calc(100% - 50px);
-    background-color: blueviolet;
   }
 }

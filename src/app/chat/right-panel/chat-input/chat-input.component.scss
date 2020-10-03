@@ -1,4 +1,4 @@
-.search__container {
+.input__container {
   height: 50px;
   padding: 0 var(--spacing-16);
   border-bottom: 1px solid var(--border);
@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  .search__box {
+  .input__box {
     background: var(--menu-background);
     border: none;
     outline: none;
@@ -18,7 +18,7 @@
     font-size: var(--fs-14);
   }
 
-  .search__icon {
+  .keyboard__icon {
     position: absolute;
     color: var(--secondary);
     left: 30px;
@@ -29,7 +29,7 @@
     }
   }
 
-  .close__icon {
+  .send__icon {
     position: absolute;
     color: var(--secondary);
     right: 30px;

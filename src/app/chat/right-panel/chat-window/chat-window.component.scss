@@ -1,0 +1,11 @@
+.container {
+  background: url("/assets/images/chat_background.png") center center no-repeat;
+  height: 100%;
+  background-size: cover;
+
+  .message__container {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(1, 1, 1, 0.86);
+  }
+}

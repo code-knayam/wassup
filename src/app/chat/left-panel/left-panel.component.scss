@@ -1,21 +1,11 @@
 .container {
   display: flex;
   flex-direction: column;
-  background-color: antiquewhite;
   height: 100%;
-
-  .menu {
-    height: 50px;
-    background-color: aqua;
-  }
-
-  .search {
-    height: 50px;
-    background-color: azure;
-  }
-
+  border-right: 1px solid var(--border);
+  overflow: hidden;
   .chat-list {
-    height: calc(100% - 100px);
-    background-color: blue;
+    height: calc(100% - 110px);
+    background-color: var(--background);
   }
 }

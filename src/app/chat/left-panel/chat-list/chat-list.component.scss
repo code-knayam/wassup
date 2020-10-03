@@ -1,0 +1,7 @@
+.chat__list__container {
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-08) var(--spacing-16);
+
+  background-color: var(--background);
+}

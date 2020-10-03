@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: var(--spacing-16) 0;
+  border-bottom: 1px solid var(--border);
+
+  .image__container {
+    padding-right: var(--spacing-08);
+    img {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+    }
+  }
+
+  .info__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 var(--spacing-08);
+    flex: 1 0 0;
+    .row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      .name {
+        color: var(--primary);
+        margin: 0;
+        font-size: var(--fs-16);
+      }
+      .time {
+        color: var(--secondary);
+        font-size: var(--fs-12);
+      }
+    }
+
+    .msg {
+      color: var(--secondary);
+      margin: 0;
+      font-size: var(--fs-12);
+    }
+  }
+}
