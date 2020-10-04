@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-chat-item',
   templateUrl: './chat-item.component.html',
-  styleUrls: ['./chat-item.component.scss']
+  styleUrls: ['./chat-item.component.scss'],
 })
 export class ChatItemComponent implements OnInit {
+  @Input('item') item;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

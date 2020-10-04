@@ -1,10 +1,7 @@
 <div class="menu__container">
   <div class="profile__image__container">
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
-      alt=""
-    />
-    <span class="name"> Name </span>
+    <img [src]="user.picture" [alt]="user.name" />
+    <span class="name"> {{ user.name }} </span>
   </div>
   <div class="more__menu">
     <mat-icon aria-hidden="false" aria-label="Example home icon"

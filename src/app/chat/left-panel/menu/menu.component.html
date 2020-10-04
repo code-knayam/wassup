@@ -1,9 +1,6 @@
 <div class="menu__container">
   <div class="profile__image__container">
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
-      alt=""
-    />
+    <img [src]="user.picture" [alt]="user.name" />
   </div>
   <div class="more__menu">
     <mat-icon aria-hidden="false" aria-label="Example home icon"

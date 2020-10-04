@@ -1,7 +1,7 @@
-<div class="container incoming">
+<div class="container" [ngClass]="message.isIncoming ? 'incoming' : 'outgoing'">
   <span class="icon">
-    <mat-icon aria-hidden="false" aria-label="Example home icon">eco</mat-icon>
+    <mat-icon>eco</mat-icon>
   </span>
-  <span class="message"> Message </span>
-  <span class="timestamp"> 20:00 </span>
+  <span class="message"> {{ message?.text }} </span>
+  <span class="timestamp"> {{ message?.timestamp }} </span>
 </div>

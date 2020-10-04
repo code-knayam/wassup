@@ -1,6 +1,7 @@
 <div class="container">
   <div class="message__container">
-    <app-message></app-message>
-    <app-message></app-message>
+    <ng-container *ngFor="let message of messageList">
+      <app-message [message]="message"></app-message>
+    </ng-container>
   </div>
 </div>

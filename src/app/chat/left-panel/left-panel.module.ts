@@ -6,6 +6,7 @@ import { SearchComponent } from './search/search.component';
 import { ChatListComponent } from './chat-list/chat-list.component';
 import { MatIconModule } from '@angular/material/icon';
 import { ChatItemComponent } from './chat-list/chat-item/chat-item.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { ChatItemComponent } from './chat-list/chat-item/chat-item.component';
     ChatListComponent,
     ChatItemComponent,
   ],
-  imports: [CommonModule, MatIconModule],
+  imports: [CommonModule, MatIconModule, ReactiveFormsModule],
   exports: [LeftPanelComponent],
 })
 export class LeftPanelModule {}

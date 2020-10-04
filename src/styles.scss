@@ -21,11 +21,14 @@ p {
 }
 
 :root {
+  --app-background: #111;
   --menu-background: #2a2f32;
   --background: #131c21;
+  --chat-hover: #262d31;
   --border: #242d32;
   --secondary: #b1b3b5;
   --primary: #d4d5d7;
+  --dark: #131c21;
   --msg-incoming: #262d31;
   --msg-outgoing: #054740;
 
@@ -37,6 +40,7 @@ p {
   --fs-14: 14px;
   --fs-16: 16px;
   --fs-20: 20px;
+  --fs-30: 30px;
 
   --border-radius: 4px;
 }

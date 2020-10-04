@@ -6,12 +6,16 @@
   display: flex;
   align-items: center;
   position: relative;
+  form {
+    width: 100%;
+  }
   .search__box {
     background: var(--menu-background);
     border: none;
     outline: none;
     border-radius: 20px;
     width: 100%;
+    box-sizing: border-box;
     height: 32px;
     padding: 0 50px;
     color: var(--primary);

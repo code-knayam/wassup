@@ -4,10 +4,17 @@
       >search</mat-icon
     >
   </span>
-  <input type="text" class="search__box" />
-  <span class="close__icon">
-    <mat-icon aria-hidden="false" aria-label="Example home icon"
-      >close</mat-icon
-    >
-  </span>
+  <form [formGroup]="searchForm">
+    <input
+      type="text"
+      class="search__box"
+      formControlName="search"
+      (keyup)="onSearch()"
+    />
+    <span class="close__icon" (click)="onCancelSearch()">
+      <mat-icon aria-hidden="false" aria-label="Example home icon"
+        >close</mat-icon
+      >
+    </span>
+  </form>
 </div>

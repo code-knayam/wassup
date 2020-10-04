@@ -4,8 +4,18 @@
       >keyboard</mat-icon
     >
   </span>
-  <input type="text" class="input__box" />
-  <span class="send__icon">
-    <mat-icon aria-hidden="false" aria-label="Example home icon">send</mat-icon>
-  </span>
+  <form [formGroup]="msgForm" (ngSubmit)="sendMessage(msgForm.value)">
+    <input
+      name="message"
+      formControlName="message"
+      type="text"
+      class="input__box"
+      autocomplete="off"
+    />
+    <button class="send__btn" type="submit" [disabled]="!msgForm.valid">
+      <span>
+        <mat-icon>send</mat-icon>
+      </span>
+    </button>
+  </form>
 </div>

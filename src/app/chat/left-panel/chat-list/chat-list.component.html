@@ -1,3 +1,8 @@
 <div class="chat__list__container">
-  <app-chat-item></app-chat-item>
+  <ng-container *ngFor="let chatItem of chatList">
+    <app-chat-item
+      (click)="onSelectChat(chatItem)"
+      [item]="chatItem"
+    ></app-chat-item>
+  </ng-container>
 </div>

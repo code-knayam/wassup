@@ -10,4 +10,11 @@
   .chat__container {
     height: calc(100% - 50px);
   }
+
+  .error {
+    color: var(--secondary);
+    font-size: var(--fs-30);
+    align-self: center;
+    margin: auto;
+  }
 }

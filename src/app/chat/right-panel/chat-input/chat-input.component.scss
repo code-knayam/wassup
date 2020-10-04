@@ -6,16 +6,21 @@
   display: flex;
   align-items: center;
   position: relative;
-  .input__box {
-    background: var(--menu-background);
-    border: none;
-    outline: none;
-    border-radius: 20px;
+
+  form {
     width: 100%;
-    height: 32px;
-    padding: 0 50px;
-    color: var(--primary);
-    font-size: var(--fs-14);
+    .input__box {
+      background: var(--menu-background);
+      border: none;
+      outline: none;
+      border-radius: 20px;
+      width: 100%;
+      box-sizing: border-box;
+      height: 32px;
+      padding: 0 50px;
+      color: var(--primary);
+      font-size: var(--fs-14);
+    }
   }
 
   .keyboard__icon {
@@ -29,7 +34,11 @@
     }
   }
 
-  .send__icon {
+  .send__btn {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    outline: none;
     position: absolute;
     color: var(--secondary);
     right: 30px;
@@ -38,5 +47,8 @@
     mat-icon {
       font-size: var(--fs-20);
     }
+  }
+  .send__btn[disabled] {
+    opacity: 0.4;
   }
 }

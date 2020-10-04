@@ -1,7 +1,12 @@
 <div class="container">
-  <app-menu></app-menu>
-  <div class="chat__container">
-    <app-chat-window></app-chat-window>
-  </div>
-  <app-chat-input></app-chat-input>
+  <ng-container *ngIf="!showError; else error">
+    <app-menu [user]="activeChat.user"></app-menu>
+    <div class="chat__container">
+      <app-chat-window></app-chat-window>
+    </div>
+    <app-chat-input></app-chat-input>
+  </ng-container>
+  <ng-template #error>
+    <div class="error">Start or Select a chat to continue</div>
+  </ng-template>
 </div>

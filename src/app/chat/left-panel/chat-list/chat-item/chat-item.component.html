@@ -1,15 +1,12 @@
 <div class="container">
   <div class="image__container">
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
-      alt=""
-    />
+    <img [src]="item?.user?.picture" [alt]="item?.user?.name" />
   </div>
   <div class="info__container">
     <div class="row">
-      <h3 class="name">Name</h3>
-      <span class="time">20:00</span>
+      <h3 class="name">{{ item?.user?.name }}</h3>
+      <span class="time">{{ item?.chat?.timestamp }}</span>
     </div>
-    <p class="msg">Message</p>
+    <p class="msg">{{ item?.chat?.msg }}</p>
   </div>
 </div>

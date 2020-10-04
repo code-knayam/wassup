@@ -1,0 +1,33 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--secondary);
+  box-sizing: border-box;
+  display: flex;
+  .card {
+    display: flex;
+    margin: auto;
+    height: 300px;
+    width: 500px;
+    background-color: var(--background);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .title {
+      color: var(--primary);
+      font-size: var(--fs-30);
+    }
+
+    .login-btn {
+      color: var(--dark);
+      font-weight: normal;
+      margin-top: var(--spacing-16);
+      .logo {
+        width: 28px;
+        height: 28px;
+        padding-right: var(--spacing-08);
+      }
+    }
+  }
+}

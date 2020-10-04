@@ -43,3 +43,7 @@
     }
   }
 }
+.container:hover {
+  cursor: pointer;
+  background: var(--chat-hover);
+}
