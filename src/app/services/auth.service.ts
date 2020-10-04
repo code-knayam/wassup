@@ -43,4 +43,10 @@ export class AuthService {
       picture: resp.picture,
     };
   }
+
+  logout() {
+    this.authenticated = false;
+    this.userInfo = undefined;
+    this.router.navigate(['auth']);
+  }
 }

@@ -3,8 +3,11 @@
     <img [src]="user.picture" [alt]="user.name" />
   </div>
   <div class="more__menu">
-    <mat-icon aria-hidden="false" aria-label="Example home icon"
-      >more_vert</mat-icon
+    <mat-icon
+      aria-hidden="false"
+      aria-label="Example home icon"
+      (click)="logOutUser()"
+      >login</mat-icon
     >
   </div>
 </div>

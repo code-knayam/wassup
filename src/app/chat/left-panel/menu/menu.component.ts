@@ -14,4 +14,8 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {
     this.user = this.authService.userInfo;
   }
+
+  logOutUser() {
+    this.authService.logout();
+  }
 }
